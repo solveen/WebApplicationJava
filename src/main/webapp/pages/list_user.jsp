@@ -6,9 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
     <title>User Lists</title>
-    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,52 +23,84 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="img js-fullheight" style="background-image: url(images/bg3.png);">
 
-<%@ include file="../include/navbar.jsp"%>
-<a href="User?page=newUsers">Add User</a>
-<table class="table table-dark">
+<%@ include file="../include/navbar.jsp" %>
+<br>
 
-    <thead>
-    <tr>
-        <th scope="col">id</th>
-        <th scope="col">User Name</th>
-        <th scope="col">Full Name</th>
-        <th scope="col">Password</th>
-        <th scope="col">Edit User</th>
-        <th scope="col">Delete User</th>
+<div class="container">
+    <div class="row">
+        <div class="mx-auto" style="width: 200px;">
+            <button type="button" class="btn btn-info px-3 button-i" onclick="window.location.href='User?page=addNewUsers';">
+                Add User
+            </button>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
 
-    </tr>
-    </thead>
-    <%--        <%--%>
-    <%--            ArrayList<User> user = (ArrayList<User>) request.getAttribute("UserTable");--%>
-    <%--            for (User u: user)--%>
-    <%--            {--%>
-    <%--        %>--%>
-    <tbody>
-    <%--        <tr>--%>
-    <%--            <td><%=u.getId()%></td>--%>
-    <%--            <td><%=u.getUser_name()%></td>--%>
-    <%--            <td><%=u.getFull_name()%></td>--%>
-    <%--            <td><%=u.getPassword()%></td>--%>
+            <table class="zui-table zui-table-rounded">
 
-    <%--        </tr>--%>
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Action</th>
 
-    <c:forEach items="${UserTable}" var="user">
-        <tr>
-            <td>${user.id}</td>
-            <td>${user.user_name}</td>
-            <td>${user.full_name}</td>
-            <td>${user.password}</td>
+                </tr>
+                </thead>
+                <%--        <%--%>
+                <%--            ArrayList<User> user = (ArrayList<User>) request.getAttribute("UserTable");--%>
+                <%--            for (User u: user)--%>
+                <%--            {--%>
+                <%--        %>--%>
+                <tbody>
+                <%--        <tr>--%>
+                <%--            <td><%=u.getId()%></td>--%>
+                <%--            <td><%=u.getUser_name()%></td>--%>
+                <%--            <td><%=u.getFull_name()%></td>--%>
+                <%--            <td><%=u.getPassword()%></td>--%>
 
-            <td><a href="User?page=EditUsers">Edit User</a></td>
-            <td><a href="User?page=DeleteUsers">Delete User</a></td>
-        </tr>
-    </c:forEach>
+                <%--        </tr>--%>
 
-    <%--          <%}%>--%>
-    </tbody>
-</table>
+                <c:forEach items="${UserTable}" var="user">
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.user_name}</td>
+                        <td>${user.full_name}</td>
+                        <td>${user.password}</td>
 
+                        <td>
+                            <button type="button" class="btn btn-success px-3 button-i"
+                                    onclick="window.location.href='User?page=UserDetails&id=${user.id}';">
+                                Edit User
+                            </button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-danger px-3 button-i"
+                                    onclick="window.location.href='User?page=UserDetails&id=${user.id}';">
+                                Delete User
+                            </button>
+
+                        </td>
+                    </tr>
+                </c:forEach>
+
+                <%--          <%}%>--%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<%@ include file="../include/footer.jsp" %>
+<script src="js/jquery.min.js"></script>
+<script src=js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

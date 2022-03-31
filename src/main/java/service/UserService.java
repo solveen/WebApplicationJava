@@ -32,7 +32,7 @@ public class UserService {
     }
     //Yele delete garxa
 
-    public void deleteid(int id) {
+    public void deleteUser(int id) {
         String deleteId = "delete from studentinfo where id = ?";
         PreparedStatement preparedStatement = new DBConnection().getStatement(deleteId);
         try {
@@ -43,9 +43,11 @@ public class UserService {
         }
     }
 
+
+
     public void userUpdate(User updateModel, int id) throws SQLException {
         String update = "UPDATE studeninfo" +
-                "SET user_name = ?, password = ? , full_name = ?" +
+                "SET user_name = ? and password = ? and full_name = ?" +
                 "WHERE id = ?;";
         PreparedStatement preparedStatements = new DBConnection().getStatement(update);
         preparedStatements.setString(1, updateModel.getUser_name());
@@ -65,6 +67,7 @@ public class UserService {
             preparedStatement.setString(2, password);
             ResultSet re = preparedStatement.executeQuery();
             //next method le cursor move garxa
+
             while (re.next()) {
                 user = new User();
                 user.setId(re.getInt("id"));
@@ -80,13 +83,34 @@ public class UserService {
         }
         return user;
     }
+    public User userDetailsRow(int id) {
+        User user = new User();
+        String userDetails  = "select * from studentinfo where id=?";
+        try {
+
+            PreparedStatement preparedStatement = new DBConnection().getStatement(userDetails);
+            preparedStatement.setInt(1, id);
+            ResultSet re = preparedStatement.executeQuery();
+            //re.next() method le cursor move garxa
+
+            while (re.next()) {
+                user.setId(re.getInt("id"));
+                user.setUser_name(re.getString("user_name"));
+                user.setFull_name(re.getString("full_name"));
+                user.setPassword(re.getString("password"));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }
+        return user;
+    }
 
     public List<User> getUserList() throws SQLException {
-
         List<User> users = new ArrayList<>();
         String query = "select * from studentinfo";
         PreparedStatement preparedStatement = new DBConnection().getStatement(query);
-
         ResultSet re = preparedStatement.executeQuery();
         //next method le cursor move garxa
         while (re.next()) {
@@ -95,7 +119,6 @@ public class UserService {
             user.setUser_name(re.getString("user_name"));
             user.setFull_name(re.getString("full_name"));
             user.setPassword(re.getString("password"));
-
             users.add(user);
         }
         return users;

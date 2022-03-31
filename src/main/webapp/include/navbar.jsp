@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
     <a class="navbar-brand" href="#">Levi</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,13 +25,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="User?page=UserLists">Users List</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item ml-auto">
-                <a class="nav-link" href="User?page=logoutUsers">Log Out</a>
-            </li>
         </ul>
+    </div>
+    <div class="navbar-nav">
+        <a class="nav-link" href="User?page=logoutUsers">Log out</a>
     </div>
 </nav>
 </body>

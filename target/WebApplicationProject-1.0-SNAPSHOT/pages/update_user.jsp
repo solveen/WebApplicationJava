@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Dashboard</title>
+    <title>Update User</title>
 </head>
 
 <meta charset="utf-8">
@@ -37,18 +37,20 @@
 </head>
 
 <body>
-<%@ include file="../include/navbar.jsp"%>
+
+<%@ include file="../include/navbar.jsp" %>
+<body class="img js-fullheight" style="background-image: url(images/bg4.jpg);">
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">Update User Here</h2>
+                <h2 class="heading-section">Add new users here</h2>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="login-wrap p-0">
-                    <h3 class="mb-4 text-center">Udpate your details</h3>
+                    <h3 class="mb-4 text-center">Enter the users details</h3>
                     <form action="User?page=UpdateUsers" method="Post">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Username" name="username" required>
@@ -62,7 +64,7 @@
                             <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control btn btn-primary submit px-3">Update User</button>
+                            <button type="submit" class="form-control btn btn-primary submit px-3">Update user</button>
                         </div>
 
                     </form>
@@ -75,21 +77,12 @@
 
 
 
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/main.js"></script>
 
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
-
-</body>
-</html>
-
-
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/main.js"></script>
 
 </body>
 </html>
