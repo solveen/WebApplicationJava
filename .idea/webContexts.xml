@@ -3,9 +3,12 @@
   <component name="WebContextManager">
     <option name="state">
       <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/add_user.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/dashboard.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/list_user.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/register.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/update_user.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/pages/user_details.jsp" value="file://$PROJECT_DIR$/src/main/webapp/pages" />
       </map>
     </option>
   </component>

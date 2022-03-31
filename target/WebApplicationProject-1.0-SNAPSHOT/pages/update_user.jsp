@@ -44,22 +44,24 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">Add new users here</h2>
+                <h2 class="heading-section">Update users here</h2>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="login-wrap p-0">
-                    <h3 class="mb-4 text-center">Enter the users details</h3>
+                    <h3 class="mb-4 text-center">Update users details</h3>
                     <form action="User?page=UpdateUsers" method="Post">
+                        <input type="hidden" name="id" value="${user.id}">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Username" name="username" required>
+
+                            <input type="text" class="form-control" value="${user.user_name}" placeholder="Username" name="user_name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Full name" name="full_name" required>
+                            <input type="text" class="form-control" value="${user.full_name}" placeholder="Full name" name="full_name" required>
                         </div>
                         <div class="form-group">
-                            <input id="password-field" type="password" class="form-control" placeholder="Password" name="password"
+                            <input id="password-field" type="password" value="${user.password}" class="form-control" placeholder="Password" name="password"
                                    required>
                             <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                         </div>

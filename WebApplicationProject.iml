@@ -10,8 +10,8 @@
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/src/main/java" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -24,6 +24,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/images" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="jdk" jdkName="13" jdkType="JavaSDK" />

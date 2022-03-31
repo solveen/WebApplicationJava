@@ -15,6 +15,7 @@ public class UserService {
     //inserting value into the table
     //User is object and user ma j rakhda ni hunxa
     public void insertUser(User user) {
+
         String SQl = "insert into studentinfo (user_name, password, full_name)" + "Values(?,?,?)";
         PreparedStatement preparedStatement = new DBConnection().getStatement(SQl);
 //        DBConnection dbConnection = new DBConnection();
@@ -28,7 +29,6 @@ public class UserService {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
     //Yele delete garxa
 
@@ -46,9 +46,8 @@ public class UserService {
 
 
     public void userUpdate(User updateModel, int id) throws SQLException {
-        String update = "UPDATE studeninfo" +
-                "SET user_name = ? and password = ? and full_name = ?" +
-                "WHERE id = ?;";
+        String update = "UPDATE studentinfo SET user_name = ? , password = ? , full_name = ?" +
+                "WHERE id = ?";
         PreparedStatement preparedStatements = new DBConnection().getStatement(update);
         preparedStatements.setString(1, updateModel.getUser_name());
         preparedStatements.setString(2, updateModel.getPassword());
@@ -123,6 +122,8 @@ public class UserService {
         }
         return users;
 
+
     }
+
 }
 

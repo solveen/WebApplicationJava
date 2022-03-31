@@ -1,9 +1,12 @@
 package com.example.WebApplicationProject;
 
 import model.User;
+import service.HashingPassword;
 import service.UserService;
 
 import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +32,10 @@ public class MainServlet extends HttpServlet {
         if (page.equalsIgnoreCase("register")) {
             User user = new User();
             user.setUser_name(request.getParameter("username"));
-            user.setPassword(request.getParameter("password"));
+            String password = request.getParameter("password");
+            password = HashingPassword.encode(password);
+            user.setPassword(password);
             user.setFull_name(request.getParameter("full_name"));
-
             UserService userService = new UserService();
             userService.insertUser(user);
 
@@ -44,6 +48,7 @@ public class MainServlet extends HttpServlet {
 
             String username = request.getParameter("username");
             String password = request.getParameter("password");
+            password = HashingPassword.encode(password);
             User userService = new UserService().getUser(username, password);
 
             if (userService != null) {
@@ -60,7 +65,7 @@ public class MainServlet extends HttpServlet {
                 requestDispatcher.include(request, response);
             }
         }
-// table ko values display hanna ko lagi
+        // table ko values display hanna ko lagi
         if (page.equalsIgnoreCase("UserLists")) {
             User user = new User();
             UserService userService = new UserService();
@@ -74,8 +79,8 @@ public class MainServlet extends HttpServlet {
                 e.printStackTrace();
 
             }
-
         }
+
         if (page.equalsIgnoreCase("newUsers")) {
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/register.jsp");
             requestDispatcher.forward(request, response);
@@ -88,24 +93,34 @@ public class MainServlet extends HttpServlet {
         if (page.equalsIgnoreCase("addUsers")) {
             User user = new User();
             user.setUser_name(request.getParameter("username"));
-            user.setPassword(request.getParameter("password"));
+            user.setPassword(HashingPassword.encode(request.getParameter("password")));
             user.setFull_name(request.getParameter("full_name"));
 
             UserService userService = new UserService();
             userService.insertUser(user);
+            try {
+                List<User> users = new UserService().getUserList();
+                request.setAttribute("UserTable", users);
 
-            out.print("User successfully added!!!");
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/add_user.jsp");
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/list_user.jsp");
             requestDispatcher.forward(request, response);
         }
 
-
+        // delete Users
         if (page.equalsIgnoreCase("removeUsers")) {
             int id = Integer.parseInt(request.getParameter("id"));
             new UserService().deleteUser(id);
             try {
-                List<User> arraylist = new UserService().getUserList();
-                request.setAttribute("arrayList", arraylist);
+                //Yo paile users delete handa pheri kina naaako vane
+                //uta list_user.jsp file ma users ko arraylist ko name UserTable thiyo
+                //so tei name call nagare vayera na ako
+                //list_user.jsp ma array list ko name same vaye paxi aauxa
+                List<User> users = new UserService().getUserList();
+                request.setAttribute("UserTable", users);
 
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -128,9 +143,35 @@ public class MainServlet extends HttpServlet {
             requestDispatcher.forward(request, response);
 
         }
-        if (page.equalsIgnoreCase("UpdateUsers")) {
+        if (page.equalsIgnoreCase("EditUsers")) {
+            int id = Integer.parseInt(request.getParameter("id"));
+            User user = new UserService().userDetailsRow(id);
+            request.setAttribute("user", user);
+            request.setAttribute("id", id);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/update_user.jsp");
+            requestDispatcher.forward(request, response);
 
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/user_details.jsp");
+        }
+        if (page.equalsIgnoreCase("UpdateUsers")) {
+            User user = new User();
+            int id = Integer.parseInt(request.getParameter("id"));
+            user.setFull_name(request.getParameter("full_name"));
+            user.setUser_name(request.getParameter("user_name"));
+            user.setPassword(HashingPassword.encode(request.getParameter("password")));
+
+            try {
+                new UserService().userUpdate(user,id);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+            List<User> users = null;
+            try {
+                users = new UserService().getUserList();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+            request.setAttribute("UserTable", users);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/list_user.jsp");
             requestDispatcher.forward(request, response);
 
         }

@@ -19,7 +19,6 @@
 
 <link rel="stylesheet" href="css/style.css">
 <body class="img js-fullheight" style="background-image: url(images/bg2.jpg);">
-<body>
 <%@ include file="../include/navbar.jsp" %>
 <div class="container">
     <div class="row">
@@ -59,7 +58,7 @@
 
                         <td>
                             <button type="button" class="btn btn-success px-3 button-i"
-                                  onclick="window.location.href='User?page=UpdateUsers&id=${user.id}';">
+                                  onclick="window.location.href='User?page=EditUsers&id=${user.id}';">
                                 Edit User
                             </button>
                             &nbsp;&nbsp;&nbsp;&nbsp;

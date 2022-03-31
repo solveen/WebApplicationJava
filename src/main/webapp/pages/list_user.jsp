@@ -78,13 +78,9 @@
                         <td>
                             <button type="button" class="btn btn-success px-3 button-i"
                                     onclick="window.location.href='User?page=UserDetails&id=${user.id}';">
-                                Edit User
+                               User Details
                             </button>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="button" class="btn btn-danger px-3 button-i"
-                                    onclick="window.location.href='User?page=UserDetails&id=${user.id}';">
-                                Delete User
-                            </button>
 
                         </td>
                     </tr>
