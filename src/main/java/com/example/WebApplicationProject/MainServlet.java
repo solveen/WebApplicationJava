@@ -82,7 +82,7 @@ public class MainServlet extends HttpServlet {
         }
 
         if (page.equalsIgnoreCase("addNewUsers")) {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/register.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/add_user.jsp");
             requestDispatcher.forward(request, response);
         }
         if (page.equalsIgnoreCase("addUsers")) {
