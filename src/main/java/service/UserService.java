@@ -110,6 +110,7 @@ public class UserService {
         List<User> users = new ArrayList<>();
         String query = "select * from studentinfo";
         PreparedStatement preparedStatement = new DBConnection().getStatement(query);
+
         ResultSet re = preparedStatement.executeQuery();
         //next method le cursor move garxa
         while (re.next()) {
@@ -123,6 +124,22 @@ public class UserService {
         return users;
 
 
+    }
+
+    public User searchUser(String user_name) throws SQLException {
+        User user = new User();
+        String search = "select * from studentinfo where user_name = ?";
+        PreparedStatement ps = new DBConnection().getStatement(search);
+        ps.setString(1, user_name);
+        ResultSet rs = ps.executeQuery();
+
+        while (rs.next()){
+            user.setId(rs.getInt("id"));
+            user.setUser_name(rs.getString("user_name"));
+            user.setFull_name(rs.getString("full_name"));
+            user.setPassword(rs.getString("password"));
+        }
+        return user;
     }
 
 }

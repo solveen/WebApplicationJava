@@ -153,25 +153,31 @@ public class MainServlet extends HttpServlet {
 
         }
         if (page.equalsIgnoreCase("UpdateUsers")) {
-            User user = new User();
+//            User user = new User();
+            //you chai pheri user details ma jana ko lagi update gare paxi
             int id = Integer.parseInt(request.getParameter("id"));
+            User user = new UserService().userDetailsRow(id);
+            request.setAttribute("user", user);
+            request.setAttribute("id", id);
+
+
             user.setFull_name(request.getParameter("full_name"));
             user.setUser_name(request.getParameter("user_name"));
             user.setPassword(HashingPassword.encode(request.getParameter("password")));
-
-            try {
-                new UserService().userUpdate(user,id);
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            List<User> users = null;
-            try {
-                users = new UserService().getUserList();
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            request.setAttribute("UserTable", users);
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/list_user.jsp");
+            //yo user list ma jana ko lagi
+//            try {
+//                new UserService().userUpdate(user,id);
+//            } catch (SQLException throwables) {
+//                throwables.printStackTrace();
+//            }
+//            List<User> users = null;
+//            try {
+//                users = new UserService().getUserList();
+//            } catch (SQLException throwables) {
+//                throwables.printStackTrace();
+//            }
+//            request.setAttribute("UserTable", users);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/user_details.jsp");
             requestDispatcher.forward(request, response);
 
         }
@@ -187,7 +193,18 @@ public class MainServlet extends HttpServlet {
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/dashboard.jsp");
             requestDispatcher.forward(request, response);
         }
+        if (page.equalsIgnoreCase("searchUser")) {
+            String user_name = request.getParameter("username");
+            try {
+                User user = new UserService().searchUser(user_name);
+                request.setAttribute("user", user);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
 
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/user_details.jsp");
+            requestDispatcher.forward(request, response);
+        }
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

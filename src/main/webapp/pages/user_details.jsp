@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Solveen
@@ -50,7 +51,8 @@
 
                 <%--        </tr>--%>
 
-                    <tr>
+
+                        <tr>
                         <td>${user.id}</td>
                         <td>${user.user_name}</td>
                         <td>${user.full_name}</td>
@@ -69,7 +71,7 @@
 
                         </td>
                     </tr>
-                </c>
+<%--                </c:forEach>--%>
 
                 <%--          <%}%>--%>
                 </tbody>

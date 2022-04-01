@@ -51,7 +51,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="login-wrap p-0">
                     <h3 class="mb-4 text-center">Update users details</h3>
-                    <form action="User?page=UpdateUsers" method="Post">
+                    <form action="User?page=UpdateUsers&id=${user.id}" method="Post">
                         <input type="hidden" name="id" value="${user.id}">
                         <div class="form-group">
 
