@@ -35,7 +35,7 @@
             <div class="mx-auto" style="width: 240px;">
                 <h1> Welcome </h1>
             </div>
-            <div class="mx-auto" style="width: 150px;">
+            <div class="mx-auto" style="width: 220px;">
                 <h3><c:out value="${sessionScope.username}"/></h3>
 
             </div>

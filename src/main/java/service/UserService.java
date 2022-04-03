@@ -46,8 +46,7 @@ public class UserService {
 
 
     public void userUpdate(User updateModel, int id) throws SQLException {
-        String update = "UPDATE studentinfo SET user_name = ? , password = ? , full_name = ?" +
-                "WHERE id = ?";
+        String update = "UPDATE studentinfo SET user_name = ? , password = ? , full_name = ? WHERE id = ?";
         PreparedStatement preparedStatements = new DBConnection().getStatement(update);
         preparedStatements.setString(1, updateModel.getUser_name());
         preparedStatements.setString(2, updateModel.getPassword());

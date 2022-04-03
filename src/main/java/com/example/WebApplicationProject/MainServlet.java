@@ -19,7 +19,8 @@ import javax.servlet.annotation.*;
 public class MainServlet extends HttpServlet {
 
     private String message;
-
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
     public void init() {
     }
 
@@ -60,7 +61,7 @@ public class MainServlet extends HttpServlet {
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("pages/dashboard.jsp");
                 requestDispatcher.forward(request, response);
             } else {
-                out.print("Unable to login! Either username or password is incorrect");
+                out.println("<p class='text-danger bg-dark'> Unable to login! Either Username or Password is incorrect <p>");
                 RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
                 requestDispatcher.include(request, response);
             }
@@ -153,17 +154,22 @@ public class MainServlet extends HttpServlet {
 
         }
         if (page.equalsIgnoreCase("UpdateUsers")) {
-//            User user = new User();
-            //you chai pheri user details ma jana ko lagi update gare paxi
             int id = Integer.parseInt(request.getParameter("id"));
-            User user = new UserService().userDetailsRow(id);
+            User user =  new UserService().userDetailsRow(id);
+            //you chai pheri user details ma jana ko lagi update gare paxi
+            user.setUser_name(request.getParameter("user_name"));
+            user.setFull_name(request.getParameter("full_name"));
+            user.setPassword(HashingPassword.encode(request.getParameter("password")));
+            try {
+                new UserService().userUpdate(user,id);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+
             request.setAttribute("user", user);
             request.setAttribute("id", id);
 
 
-            user.setFull_name(request.getParameter("full_name"));
-            user.setUser_name(request.getParameter("user_name"));
-            user.setPassword(HashingPassword.encode(request.getParameter("password")));
             //yo user list ma jana ko lagi
 //            try {
 //                new UserService().userUpdate(user,id);
