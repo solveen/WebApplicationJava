@@ -17,21 +17,21 @@
    * Then, open intellij and go to file and click on project structure.
    * Click on the libraries tab and then on plus sign located in the top-middle of the tab and select java.
        <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="500" height="300">
        </p>
    
    * From then, you can add the two libraries that you have downloaded and placed in the tomcat lib directory.   
         <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png" width="500" height="300">
         </p>
    5. Open XAMMP control panel and then, start MySQL and Apcahe services.
    6. Configure the tomcat server in the edit configurations of intellij.
       <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161539448-3fb71b67-0bba-4a7f-b0f3-7a56fff816a7.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161539448-3fb71b67-0bba-4a7f-b0f3-7a56fff816a7.png" width="500" height="300">
        </p>
    7. Then, click on the configure button as shown in the picture below.
        <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png" width="500" height="300">
        </p>
    8. After, that you need to configure the home and base directory of the tomcat server which can be found inside the XAMMP folder.
 
