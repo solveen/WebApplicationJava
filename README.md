@@ -17,7 +17,7 @@
    * Then, open intellij and go to file and click on project structure.
    * Click on the libraries tab and then on plus sign located in the top-middle of the tab and select java.
        <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="500" height="300">
        </p>
    
    * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
