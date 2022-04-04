@@ -16,7 +16,9 @@
    * After the files are downloaded you need to place both jar files inside the lib directory of both tomcat and intellij.
    * Then, open intellij and go to file and click on project structure.
    * Click on the libraries tab and then on plus sign located in the top-middle of the tab and select java.
+   <p align="center" width="100%">
    <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="200" height="200">
+   </p>
    * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
        ![image](https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png)
    5. Open XAMMP control panel and then, Run MySQL and Apcahe services.
