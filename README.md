@@ -16,5 +16,5 @@
    ![image](https://user-images.githubusercontent.com/41668152/161539448-3fb71b67-0bba-4a7f-b0f3-7a56fff816a7.png)
 
    
-    To get to the dashboard, you must first register and  then login.
+    To get to dashboard, you must first register and then login.
   
