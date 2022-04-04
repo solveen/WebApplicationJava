@@ -26,11 +26,17 @@
         </p>
    5. Open XAMMP control panel and then, Run MySQL and Apcahe services.
    6. Configure the tomcat server in the edit configurations of intellij.
-     ![image](https://user-images.githubusercontent.com/41668152/161539448-3fb71b67-0bba-4a7f-b0f3-7a56fff816a7.png)
+      <p align="center" width="100%">
+         <img src="https://user-images.githubusercontent.com/41668152/161539448-3fb71b67-0bba-4a7f-b0f3-7a56fff816a7.png" width="400" height="300">
+       </p>
    7. Then, click on the configure button as shown in the picture below.
-     ![image](https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png)
+       <p align="center" width="100%">
+         <img src="https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png" width="400" height="300">
+       </p>
    8. After, that you need to configure the home and base directory of the tomcat server which can be found inside the XAMMP folder.
-     ![image](https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png)
+      <p align="center" width="100%">
+         <img src="https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png" width="400" height="300">
+       </p>
 
 ## User Stories
    1. A user can add other users.
