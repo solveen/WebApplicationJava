@@ -20,9 +20,9 @@
        ![image](https://user-images.githubusercontent.com/41668152/161546888-cc607e46-5f33-4597-b566-b0dad257dcc5.png)
      * Click on the libraries tab as shown in the figure below.
        ![image](https://user-images.githubusercontent.com/41668152/161547236-d9ee7269-797e-460f-b54f-a6946cd70eef.png)
-     * Click on the plus sign located in the top-middle of the tab and select java. From then, you can add the two libraries that you downloaded and placed in the
-       tomcat lib directory.  
+     * Click on the plus sign located in the top-middle of the tab and select java.
        ![image](https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png
+     * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
        ![image](https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png
    5. Open XAMMP control panel and then, Run MySQL and Apcahe services.
    6. Configure the tomcat server in the edit configurations of intellij.
