@@ -6,7 +6,7 @@
   
 
 
-## How to run the app
+## How to run the app on localhost
    
    1. Install intellij 2021 and XAMMP.  
    2. Clone the project the project into your desired directory
