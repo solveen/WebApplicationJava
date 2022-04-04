@@ -17,9 +17,9 @@
        ![image](https://user-images.githubusercontent.com/41668152/161546254-60d8704f-68c1-4dd2-9018-86f68de814b2.png)
        ![image](https://user-images.githubusercontent.com/41668152/161546661-742d886e-e8ba-4e89-a701-9993ca669ee9.png)
      * Then, open intellij and go to file and click on project structure.
-       ![image](https://user-images.githubusercontent.com/41668152/161546888-cc607e46-5f33-4597-b566-b0dad257dcc5.png)
+       ![image](https://user-images.githubusercontent.com/41668152/161548724-79af2ecd-f7d2-4ad2-93b1-b03fbc6a56c7.png)
      * Click on the libraries tab as shown in the figure below.
-       ![image](https://user-images.githubusercontent.com/41668152/161547236-d9ee7269-797e-460f-b54f-a6946cd70eef.png)
+       ![image](https://user-images.githubusercontent.com/41668152/161548793-28bc56ad-27de-47ec-b922-827776f71231.png)
      * Click on the plus sign located in the top-middle of the tab and select java.
        ![image](https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png)
      * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
