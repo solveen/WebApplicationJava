@@ -69,9 +69,17 @@
 
 
 ## User interface of the web application
-    <p align="center" width="100%">
-        <img src="https://user-images.githubusercontent.com/41668152/161559870-40b014c6-5a9c-4f68-8459-b25d9077662b.png" width="400" height="300">
-    </p> 
+  <p align="left" width="100%">
+    <img src="https://user-images.githubusercontent.com/41668152/161559870-40b014c6-5a9c-4f68-8459-b25d9077662b.png" width="500" height="300">
+    <img src="https://user-images.githubusercontent.com/41668152/161560409-e4c8b563-d9b3-4856-8f25-afb8e7e3d5e3.png" width="500" height="300">
+  </p> 
 
-
+  <p align="left" width="100%">
+    <img src="https://user-images.githubusercontent.com/41668152/161560766-e218b283-8748-4f8f-bd85-68549233051b.png" width="500" height="300">
+    <img src="https://user-images.githubusercontent.com/41668152/161560892-5df17d08-95f4-4c54-a5eb-1acf0fcfbec3.png" width="500" height="300">
+  </p> 
   
+  <p align="left" width="100%">
+    <img src="https://user-images.githubusercontent.com/41668152/161560966-8be7d8dd-16cc-4a56-a6a4-59720b7aa961.png" width="500" height="300">
+    <img src="https://user-images.githubusercontent.com/41668152/161561265-4118e200-e01b-4011-9e1f-fddb7a6d404e.png" width="500" height="300">
+  </p> 
