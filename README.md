@@ -2,7 +2,7 @@
   It is a web application built with Java that demonstrates the simple CRUD opertations and user search function. 
   
 
-  To see WebLevi live in action, open a browser tab and go to  https://web-application-project-dwit.herokuapp.com/. 
+  To see **WebLevi** live in action, open a browser tab and go to  https://web-application-project-dwit.herokuapp.com/. 
   
 
 
@@ -20,12 +20,16 @@
    ![image](https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png)
 
 
+
 ## User Stories
    1. A user can add other users.
    2. A user can view other user details
    3. A user can update details of other users.
    4. A user can delete other users.
   
+## Technical
+   The front end of the app is built with HTML/CSS, Javascript and Bootstrap 4.
   
+   2. 
     To get to dashboard, you must first register and then login.
   
