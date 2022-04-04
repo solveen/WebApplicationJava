@@ -35,7 +35,7 @@
        </p>
    8. After, that you need to configure the home and base directory of the tomcat server which can be found inside the XAMMP folder.
       <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png" width="400" height="400">
        </p>
 
 ## User Stories
