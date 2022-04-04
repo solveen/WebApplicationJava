@@ -28,7 +28,7 @@
    4. A user can delete other users.
   
 ## Technical
-   The front end of the app is built with HTML/CSS, Javascript and Bootstrap 4.
+   * The front end of the app is built with HTML/CSS, Javascript and Bootstrap 4.
   
    2. 
     To get to dashboard, you must first register and then login.
