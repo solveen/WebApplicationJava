@@ -31,11 +31,11 @@
        </p>
    7. Then, click on the configure button as shown in the picture below.
        <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png" width="400" height="300">
+         <img src="https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png" width="300" height="300">
        </p>
    8. After, that you need to configure the home and base directory of the tomcat server which can be found inside the XAMMP folder.
       <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png" width="400" height="400">
+         <img src="https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png" width="300" height="300">
        </p>
 
 ## User Stories
