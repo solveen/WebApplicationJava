@@ -69,6 +69,9 @@
 
 
 ## User interface of the web application
-    
-    
+    <p align="center" width="100%">
+        <img src="https://user-images.githubusercontent.com/41668152/161559870-40b014c6-5a9c-4f68-8459-b25d9077662b.png" width="400" height="300">
+    </p> 
+
+
   
