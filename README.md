@@ -36,13 +36,22 @@
    8. After, that you need to configure the home and base directory of the tomcat server which can be found inside the XAMMP folder.
 
 ## User Stories
-   1. A user can add other users.
+   1. A user can add new users.
    2. A user can view other user details
    3. A user can update details of other users.
    4. A user can delete other users.
  
 ## Features 
-   
+   * Add users and Update user
+    * User adds new user or update new user
+    * The user details are validated, no empty details allowed
+    * The user details are sent to the database
+   * User listing
+    * The updated or added users are shown in the list along with other users.
+   * Searching user
+    * The user searches username to get the details of the other users.
+   * Deleting user
+    * User deletes other user with their id which will erase them from the database. 
   
 ## Technical
    * The front end of the app is built with HTML/CSS, Javascript and Bootstrap 4.
@@ -59,6 +68,6 @@
   * Top rated comments and top discussion of the months
 
 
-## 
+## User interface of the web application
 
   
