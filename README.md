@@ -68,7 +68,7 @@
   * Top rated comments and top discussion of the months
 
 
-## User interface of the web application
+## User interface 
   <p align="left" width="100%">
     <img src="https://user-images.githubusercontent.com/41668152/161559870-40b014c6-5a9c-4f68-8459-b25d9077662b.png" width="400" height="300">
     <img src="https://user-images.githubusercontent.com/41668152/161560409-e4c8b563-d9b3-4856-8f25-afb8e7e3d5e3.png" width="400" height="300">
