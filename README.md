@@ -13,8 +13,9 @@
    3. Open the project with intellij.
    4. You need to add External libraries such as MySQL connector and JavaServer Pages Standard Tag Library(JSTL).
      * You can download JSTL from https://tomcat.apache.org/taglibs/standard/ and MySQL connector from https://dev.mysql.com/downloads/connector/j/.
+   
      * After the files are downloaded you need to place both jar files inside the lib directory of both tomcat and intellij.
-       <img src="https://user-images.githubusercontent.com/41668152/161546254-60d8704f-68c1-4dd2-9018-86f68de814b2.png" width="500" height="500">
+       <img src="https://user-images.githubusercontent.com/41668152/161546254-60d8704f-68c1-4dd2-9018-86f68de814b2.png" width="500" height="200">
        ![image](https://user-images.githubusercontent.com/41668152/161546661-742d886e-e8ba-4e89-a701-9993ca669ee9.png)
      * Then, open intellij and go to file and click on project structure.
        ![image](https://user-images.githubusercontent.com/41668152/161548724-79af2ecd-f7d2-4ad2-93b1-b03fbc6a56c7.png)
