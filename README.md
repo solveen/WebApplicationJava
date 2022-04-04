@@ -20,7 +20,7 @@
          <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="400" height="300">
        </p>
    
-   * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
+   * From then, you can add the two libraries that you have downloaded and placed in the tomcat lib directory.   
         <p align="center" width="100%">
          <img src="https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png" width="400" height="300">
         </p>
@@ -34,9 +34,6 @@
          <img src="https://user-images.githubusercontent.com/41668152/161539767-d2cb65a4-eaee-4a0c-8231-e4fd83824a9c.png" width="400" height="300">
        </p>
    8. After, that you need to configure the home and base directory of the tomcat server which can be found inside the XAMMP folder.
-      <p align="center" width="100%">
-         <img src="https://user-images.githubusercontent.com/41668152/161540124-6d5846ab-043c-451e-ab8c-9ecc3aae25ee.png" width="400" height="400">
-       </p>
 
 ## User Stories
    1. A user can add other users.
