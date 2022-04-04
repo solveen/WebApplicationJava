@@ -46,5 +46,12 @@
    * The back end is built with JAVA EE 8 and it uses XAMMP with MySQL as a database. 
    * The external libraries used for this project are MySQL Connector/J (used for JDBC connection to MySQL) and JSTL.
   
-    To get to dashboard, you must first register and then login.
+## Future developments of the app will include:
+  * Admin Login and Dashboard
+  * Social Login
+  * Able to message other users
+  * Topic discussion and comment section
+  * Like and dislike 
+  * Top rated comments and top discussion of the months
+
   
