@@ -42,15 +42,15 @@
    4. A user can delete other users.
  
 ## Features 
-   * Add users and Update user
+  * Add users and Update user
     * User adds new user or update new user
     * The user details are validated, no empty details allowed
     * The user details are sent to the database
-   * User listing
+  * User listing
     * The updated or added users are shown in the list along with other users.
-   * Searching user
+  * Searching user
     * The user searches username to get the details of the other users.
-   * Deleting user
+  * Deleting user
     * User deletes other user with their id which will erase them from the database. 
   
 ## Technical
