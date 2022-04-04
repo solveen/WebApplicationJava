@@ -12,15 +12,18 @@
    2. Clone the project into your desired directory.
    3. Open the project with intellij.
    4. You need to add External libraries such as MySQL connector and JavaServer Pages Standard Tag Library(JSTL).
-   * You can download JSTL from https://tomcat.apache.org/taglibs/standard/ and MySQL connector from https://dev.mysql.com/downloads/connector/j/.
-   * After the files are downloaded you need to place both jar files inside the lib directory of both tomcat and intellij.
-   * Then, open intellij and go to file and click on project structure.
-   * Click on the libraries tab and then on plus sign located in the top-middle of the tab and select java.
-   <p align="center" width="100%">
-   <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="200" height="200">
-   </p>
-   * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
-       ![image](https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png)
+     * You can download JSTL from https://tomcat.apache.org/taglibs/standard/ and MySQL connector from https://dev.mysql.com/downloads/connector/j/.
+     * After the files are downloaded you need to place both jar files inside the lib directory of both tomcat and intellij.
+     * Then, open intellij and go to file and click on project structure.
+     * Click on the libraries tab and then on plus sign located in the top-middle of the tab and select java.
+       <p align="center" width="100%">
+         <img src="https://user-images.githubusercontent.com/41668152/161547728-29ca211d-676a-411d-ac39-ed50c0415be3.png" width="200" height="200">
+       </p>
+   
+     * From then, you can add the two libraries that you downloaded and placed in the tomcat lib directory.   
+        <p align="center" width="100%">
+         <img src="https://user-images.githubusercontent.com/41668152/161548080-17863cbd-ec2e-4703-a55a-51b700341f82.png" width="200" height="200">
+        </p>
    5. Open XAMMP control panel and then, Run MySQL and Apcahe services.
    6. Configure the tomcat server in the edit configurations of intellij.
      ![image](https://user-images.githubusercontent.com/41668152/161539448-3fb71b67-0bba-4a7f-b0f3-7a56fff816a7.png)
