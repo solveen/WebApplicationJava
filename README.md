@@ -40,6 +40,9 @@
    2. A user can view other user details
    3. A user can update details of other users.
    4. A user can delete other users.
+ 
+## Features 
+   
   
 ## Technical
    * The front end of the app is built with HTML/CSS, Javascript and Bootstrap 4.
@@ -51,7 +54,11 @@
   * Social Login
   * Able to message other users
   * Topic discussion and comment section
-  * Like and dislike 
+  * Like and dislike of comments
+  * Ability to rate user's profile
   * Top rated comments and top discussion of the months
+
+
+## 
 
   
