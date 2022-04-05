@@ -56,7 +56,7 @@
 ## Technical
    * The front end of the app is built with HTML/CSS, Javascript and Bootstrap 4.
    * The back end is built with JAVA EE 8 and it uses XAMMP with MySQL as a database. 
-   * The external libraries used for this project are MySQL Connector/J (used for JDBC connection to MySQL) and JSTL.
+   * The external libraries used for this project are MySQL Connector (used for JDBC connection to MySQL) and JSTL.
   
 ## Future developments of the app will include:
   * Admin Login and Dashboard
